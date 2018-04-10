@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<title>Ponte en contacto con... | La vuelta al mundo</title>
+
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body class="con">
+	<div id="contenido"> <!--  CONTENIDO -->
+
+
+
+		<div id="cuerpo" class="container"> <!-- CUERPO PRINCIPAL -->
+			<section>
+
+				<div id="articulos" class="pasar-left">
+					<article id="article01">
+						<header><h2>Ponte en contacto. Solicita información sin compromiso:</h2></header>
+						<figure></figure>
+
+	            		<form id="form_contacto" method="post" action="#" onsubmit="return valida_contacto()">
+							<input type="hidden" name="action" value="verdatos">
+							<fieldset><legend>Introduce tus datos: </legend>
+								<div><label for="nombre"><span class="required">&nbsp; </span>Nombre y Apellido: <input type="text" id="nombre" name="nombre" required></label></div>
+							  	<div class="pasar-left">
+							  		<label for="email"><span class="required">&nbsp; </span>E-mail: <input type="email" id="email"  name="email" pattern="^[-\w.]+@{1}[-a-z0-9]+[.]{1}[a-z]{2,5}$" required></label>
+							  	</div>
+							  	<div class="pasar-left"><label for="phone">Teléfono: <input type="phone" id="phone"  name="phone"  pattern="^[\d]{3}[-\s]*([\d]{2}[-\s]*){2}[\d]{2}$"></label></div>
+							</fieldset>
+							<fieldset><legend>Realiza la consulta: </legend>
+								<div><label for="asunto">Asunto: <input type="text" id="asunto" name="asunto"></label></div>
+							  	<div>
+							  		<label for="comentario"><span class="required">&nbsp; </span>Comentario: <textarea placeholder="Tu comentario" id="comentario"  name="comentario" required></textarea></label>
+							  	</div>
+							</fieldset>
+							<fieldset><legend>Términos y validación: </legend>
+								<div>
+									<label for="codigo"><span class="required">&nbsp; </span>Introduce el código:&nbsp;
+									<input type="text" id="codigo" name="codigo" size="3" maxlength="3" pattern="^[\w]{3}$" required>
+									<img src="./imagenes/captcha.php.gif" width="75" align="top" style="margin: 5px 0 0 10px;"></label>
+								</div>
+								<div class="pasar-right no_marg">	
+									<label for="aceptar">
+						      		<input type="checkbox" name="aceptar"  id="aceptar" required/>&nbsp;&nbsp; Acepto la <a href="#" title="Términos Legales">política de privacidad. &nbsp;</a><span class="required"> </span></label>
+								</div>
+								<div class="pasar-clear  no_marg"></div>
+								<div class="pasar-right  no_marg">	
+									<label for="concurso">
+						      		<input type="checkbox" name="concurso"  id="concurso" />&nbsp;&nbsp; Participo en el concurso y acepto las <a href="#" title="Términos legales del concurso">bases del concurso.</a></label>
+								</div>
+								<div class="pasar-clear"></div>
+								<div class="botones"><input class="btn btn-default-02" type="submit" value="Enviar Email"><input class="btn btn-default-01" type="reset" value="Borrar"></div>
+								<p><span class="required">&nbsp; </span>Campos obligatorios.</p>
+							</fieldset>
+						</form>
+
+	            		<footer>
+ 
+	            		</footer>
+					</article>
+
+				</div>
+
+				<aside class="pasar-right">
+					<header><h3>III concurso 'Maleta de Viaje'</h3></header>
+					<div class="aside">
+					<figure class="maleta"><figcaption></figcaption></figure>
+					<h4>Participa en nuestro concurso:</h4>
+					<p>Cuéntanos como sería tu viaje ideal, utiliza todos los detalles que puedas y si es el ganador te llevarás nuestro premio.</p>
+					<p>Nuestra maleta es un viaje valorado en 3.500€, que puede ser tuyo si nos cuentas el viaje de tus sueños.</p>
+					<p>Para participar solo tienes que enviarnos un email, donde nos cuentes tu viaje perfecto. Recuerda hacerlo detalladamente y podrás ganar nuestro fantástico premio.</p>
+					<p><mark>!A qué esperas para hacer la maleta!</mark></p>
+					<p><small><strong>Importante: </strong>Para poder participar en el concurso es necesario que marques la casilla de participación en el mismo en el formulario de email. No se aceptaran los email que no hayan sido marcados para concursar.</small></p>
+					</div>
+					<div  class="pasar-clear"></div>
+    			</aside>
+
+			</section>
+		</div>
+		<div  class="pasar-clear"></div> <!-- FIN del CUERPO PRINCIPAL -->
+
+			<article id="article02" class="container">
+				<header><h2>¿Eres de los que prefieres el contacto más personal?</h2></header>
+				<div id="mapholder" class="pasar-left container">
+				<figure></figure>
+				</div>
+				<address class="pasar-right"><strong>Agencia de viajes:<br>"La vuelta al mundo"</strong><br><br>C/ Cuarteles 15<br>C.P.: 29002.<br><strong class="pasar-right">Málaga</strong><br><br>Tfno: 952 12 98 74.</address>
+				<div  class="pasar-clear"></div>
+			</article>
+
+
+
+
+	</div> <!-- FIN del CONTENIDO -->
+
+</body>
+</html>
